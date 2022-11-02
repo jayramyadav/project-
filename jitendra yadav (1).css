@@ -1,0 +1,95 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ .column {
+     float: left;
+     width: 33.33%;
+     padding: 5px;
+ }
+
+ .row::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+
+ body {
+     background-color: greenyellow;
+     background-image: url("back1.jpg");
+     height: auto;
+     width: auto;
+     background-size: cover;
+     background-repeat: repeat-y;
+     background-attachment: scroll;
+     display: flexbox;
+
+     /* letter-spacing: 30px; */
+     /* word-spacing: 130px; */
+     /* line-height: 4; */
+
+     /* text-indent: -550px; */
+ }
+
+ h1 {
+     color: rgb(17, 19, 13);
+     background-image: linear-gradient(90deg, rgb(215, 252, 5), PINK, rgb(189, 172, 172), rgb(145, 213, 240), rgb(69, 236, 18));
+     font-size: 55px;
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+     /* padding:40px;
+            margin:40px;
+            border-radius: 20px; */
+
+ }
+
+ #mybox {
+     width: 150px;
+     height: 150px;
+     padding: 30px;
+     Margin: 30px;
+     border: 2px solid red;
+     text-align: center;
+     background-color: grey;
+     color: white;
+
+     animation-name: myanim;
+     animation-duration: 5s;
+     animation-iteration-count: 5;
+     position: relative;
+     font-family: 'Times New Roman', Times, serif;
+
+ }
+
+ @keyframes myanim {
+     20% {
+         background-color: chartreuse;
+         left: 0px;
+         top: 0px;
+     }
+
+     40% {
+         background-color: deeppink;
+         left: 200px;
+         top: 0px;
+     }
+
+     60% {
+         background-color: crimson;
+         left: 200px;
+         top: 200px;
+     }
+
+     80% {
+         background-color: blue;
+         left: 0px;
+         top: 200px;
+     }
+
+     100% {
+         background-color: cyan;
+         left: 0px;
+         top: 0px;
+     }
+
+ }
